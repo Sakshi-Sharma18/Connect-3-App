@@ -1,4 +1,4 @@
-Connect 3 App works like TicTacToe but with tokens.
+Connect 3 App works like TicTacToe but with tokens. Game is developed in Android Studio using Java.
 
 App view-
 
