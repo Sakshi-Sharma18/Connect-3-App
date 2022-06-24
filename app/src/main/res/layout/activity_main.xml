@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="480dp"
+        android:background="@drawable/grid"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/Iv4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/todo"
+            android:onClick="display"
+            android:tag="3"
+            app:layout_column="0"
+            app:layout_row="1"
+            tools:srcCompat="@drawable/white" />
+
+        <ImageView
+            android:id="@+id/Iv5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/todo"
+            android:onClick="display"
+            android:tag="4"
+            app:layout_column="1"
+            app:layout_row="1"
+            tools:srcCompat="@drawable/white" />
+
+        <ImageView
+            android:id="@+id/Iv6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/todo"
+            android:onClick="display"
+            android:tag="5"
+            app:layout_column="2"
+            app:layout_row="1"
+            tools:srcCompat="@drawable/white" />
+
+        <ImageView
+            android:id="@+id/Iv9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/todo"
+            android:onClick="display"
+            android:tag="8"
+            app:layout_column="2"
+            app:layout_row="2"
+            tools:srcCompat="@drawable/white" />
+
+        <ImageView
+            android:id="@+id/Iv8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/todo"
+            android:onClick="display"
+            android:tag="7"
+            app:layout_column="1"
+            app:layout_row="2"
+            tools:srcCompat="@drawable/white" />
+
+        <ImageView
+            android:id="@+id/Iv7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/todo"
+            android:onClick="display"
+            android:tag="6"
+            app:layout_column="0"
+            app:layout_row="2"
+            tools:srcCompat="@drawable/white" />
+
+        <ImageView
+            android:id="@+id/Iv2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/todo"
+            android:onClick="display"
+            android:tag="1"
+            app:layout_column="1"
+            app:layout_row="0"
+            tools:srcCompat="@drawable/white" />
+
+        <ImageView
+            android:id="@+id/Iv3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/todo"
+            android:onClick="display"
+            android:tag="2"
+            app:layout_column="2"
+            app:layout_row="0"
+            tools:srcCompat="@drawable/white" />
+
+        <ImageView
+            android:id="@+id/Iv1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:contentDescription="@string/todo"
+            android:onClick="display"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="0"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck"
+            tools:srcCompat="@drawable/white" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/T1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_1_s_turn"
+        android:textColor="@color/purple_700"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.237"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/T2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_2_s_turn"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.529"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/PlayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="reset"
+        android:text="Play Again"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/T2"
+        app:layout_constraintVertical_bias="0.448"
+        tools:visibility="invisible" />
+</androidx.constraintlayout.widget.ConstraintLayout>
